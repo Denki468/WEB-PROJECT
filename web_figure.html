@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="d:/project//css/index.css">
+    <title>Figure Store</title>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">FIGURE SHOP</div>
+
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Sản Phẩm</a>
+            <a href="#">Khuyến Mãi</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Giỏ Hàng</a>
+            <a href="#" onclick="openModal(); return false;"><img src="d:\project\image\logo-login.png"
+            alt="Logo Đăng Nhập"
+            width="30"
+            height="40"
+            style="vertical-align: middle; margin-right: 10px;">Đăng Nhập / Đăng Ký▼</a>
+        </nav>
+    </header>
+    <div class="modal-overlay" id="loginModal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+        <p>Nhập email và mật khẩu của bạn:</p>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Mật khẩu" />
+        <button class="btn-login-submit">Đăng nhập</button>
+        <div class="btn-social-row">
+            <button class="btn-google">Đăng nhập Google</button>
+            <button class="btn-facebook">Đăng nhập Facebook</button>
+        </div>
+        <div class="modal-footer">
+            <div>Newbie <a href="#">Tạo tài khoản</a></div>
+            <div>Quên mật khẩu? <a href="#">dumb fuck, why can you forget it</a></div>
+        </div>
+    </div>
+    <script>
+    function openModal()  { document.getElementById('loginModal').classList.add('active'); }
+    function closeModal() { document.getElementById('loginModal').classList.remove('active'); }
+
+    // Đóng khi click bên ngoài modal
+    document.getElementById('loginModal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+</script>
+</div>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Anime Figure Cao Cấp</h1>
+            <p>Nhanh tay múc ngay 1 bé waifu / husbando cho riêng mình nào các đồng râm :3 </p>
+            <a href="#" class="btn">Mua Ngay</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2 class="title">SẢN PHẨM NỔI BẬT</h2>
+
+        <div class="product-list">
+
+            <div class="card">
+                <img src="d:\project\image\s-l1200.jpg" alt="">
+                <div class="card-content">
+                    <h3>Gojo Satoru</h3>
+                    <div class="price">1.200.000đ</div>
+                    <a href="#" class="buy-btn">Thêm Vào Giỏ</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="d:\project\image\71YK8bUh2JL._AC_SL1500_.jpg" alt="">
+                <div class="card-content">
+                    <h3>Luffy Gear 5</h3>
+                    <div class="price">5.000.000đ</div>
+                    <a href="#" class="buy-btn">Thêm Vào Giỏ</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="d:\project\image\10889909b2_786d05dcbd83426c85e26691cb5746de.jpg" alt="">
+                <div class="card-content">
+                    <h3>Zero Two</h3>
+                    <div class="price">1.450.000đ</div>
+                    <a href="#" class="buy-btn">Thêm Vào Giỏ</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="d:\project\image\1573757_d7bcd790c8b9430a861bbbc1a67e9ad3_grande.jpg" alt="">
+                <div class="card-content">
+                    <h3>Rem RE:Zero</h3>
+                    <div class="price">890.000đ</div>
+                    <a href="#" class="buy-btn">Thêm Vào Giỏ</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Figure Shop | Thiết kế bằng HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
